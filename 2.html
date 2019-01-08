@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="element">Element 1</div>
+	<div class="element">Element 2</div>
+	<div class="element">Element 3</div>
+	<div class="element">Element 4</div>
+	<div class="element">Element 5</div>
+	<div class="element">Element 6</div>
+	
+	<script type="application/javascript">
+		let redList = document.getElementsByClassName('element')[0];
+		redList.style.color = 'red';
+		redList.appendChild(document.getElementsByClassName('element')[1]);
+		redList.appendChild(document.getElementsByClassName('element')[2]);
+		
+		let greenList = document.getElementsByClassName('element')[3];
+		greenList.style.color = 'green';
+		greenList.appendChild(document.getElementsByClassName('element')[4]);
+		greenList.appendChild(document.getElementsByClassName('element')[5]);
+		
+	</script>
+</body>
+</html>
