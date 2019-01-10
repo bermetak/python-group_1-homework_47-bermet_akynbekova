@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="container"></div>
+
+
+	<script type="application/javascript">
+		createDiv = function() {
+			let newDiv = (document.createElement('div'));
+			newDiv.className = 'element';
+			container.appendChild(newDiv);
+			newDiv.innerHTML = (parseInt(Math.random() * 10));
+		}
+		
+		function start() {for (let i = 1; i < 4; i++) {
+			setTimeout (createDiv, 5000)
+			}}
+
+		window.onload = start()
+
+
+
+	</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+
+</body>
+</html>
